@@ -29,7 +29,7 @@ uvicorn main:app --reload --port 8000
 Send a POST request to analyze sentiment:
 
 ```bash
-curl -X POST "http://localhost:8000/predict" \
+curl -X POST "http://localhost:8000/predict/trained" \
      -H "Content-Type: application/json" \
      -d '{"text": "This movie was amazing!"}'
 ```
