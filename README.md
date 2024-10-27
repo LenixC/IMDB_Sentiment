@@ -14,7 +14,7 @@ A production-ready sentiment analysis API based on IMDB review with monitoring, 
 
 ```bash
 # Clone the repository
-git clone [your-repo-url]
+git clone https://github.com/LenixC/IMDB_Sentiment
 cd sentiment-analysis-api
 
 # Install dependencies
