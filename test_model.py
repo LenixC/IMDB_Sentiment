@@ -13,7 +13,7 @@ def test_positive_sentiment():
     )
     assert response.status_code == 200
     data = response.json()
-    assert data["sentiment"] == "POSITIVE"
+    assert data["sentiment"] == "LABEL_1"
     assert data["score"] > 0.5
 
 
@@ -24,5 +24,5 @@ def test_negative_sentiment():
     )
     assert response.status_code == 200
     data = response.json()
-    assert data["sentiment"] == "NEGATIVE"
+    assert data["sentiment"] == "LABEL_0"
     assert data["score"] < 0.5
